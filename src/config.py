@@ -1,6 +1,6 @@
 from typing import List
 
-DIRECTORY_PATH = 'C://users/vasus/desktop/kek'
+DIRECTORY_PATH = 'C://Users/4814285/Desktop/lab-calculator/data'
 COLUMN_NUMBER = 2
 FACILITY_INACCURACY = 0
 
