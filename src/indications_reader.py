@@ -18,7 +18,7 @@ class IndicationsReader:
 
     def _read_indication(self, file_path):
         df = pandas.read_csv(file_path, header=None)
-        return [float('.'.join(reading.split(','))) for reading in list(df.iloc[:, self._column_number])]
+        return [float('.'.join(str(reading).split(','))) for reading in list(df.iloc[:, self._column_number])]
 
     def _get_file_paths(self):
         return [join(self._directory_path, f) for f in listdir(self._directory_path)]
